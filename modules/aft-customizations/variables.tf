@@ -109,6 +109,10 @@ variable "global_codebuild_timeout" {
   type = number
 }
 
+variable "aft_feature_disable_private_networking" {
+  type = bool
+}
+
 variable "lambda_runtime_python_version" {
   type = string
 }
