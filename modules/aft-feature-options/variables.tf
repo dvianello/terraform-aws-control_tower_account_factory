@@ -5,6 +5,10 @@ variable "aft_vpc_private_subnets" {
   type = list(string)
 }
 
+variable "aft_vpc_public_subnets" {
+  type = list(string)
+}
+
 variable "aft_vpc_default_sg" {
   type = list(string)
 }
@@ -54,6 +58,10 @@ variable "feature_options_archive_path" {
 
 variable "feature_options_archive_hash" {
   type = string
+}
+
+variable "aft_feature_disable_private_networking" {
+  type = bool
 }
 
 variable "delete_default_vpc_lambda_function_name" {
