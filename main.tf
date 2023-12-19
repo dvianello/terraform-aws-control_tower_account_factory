@@ -52,6 +52,8 @@ module "aft_account_request_framework" {
   aft_vpc_public_subnet_02_cidr               = var.aft_vpc_public_subnet_02_cidr
   aft_vpc_endpoints                           = var.aft_vpc_endpoints
   aft_feature_disable_private_networking      = var.aft_feature_disable_private_networking
+  aft_backup_schedule                        = var.aft_backup_schedule
+  aft_backup_retention                       = var.aft_backup_retention
   concurrent_account_factory_actions          = var.concurrent_account_factory_actions
   request_framework_archive_path              = module.packaging.request_framework_archive_path
   request_framework_archive_hash              = module.packaging.request_framework_archive_hash

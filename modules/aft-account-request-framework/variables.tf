@@ -59,3 +59,13 @@ variable "concurrent_account_factory_actions" {
 variable "lambda_runtime_python_version" {
   type = string
 }
+
+variable "aft_backup_schedule" {
+  type    = string
+  default = "cron(0 * * * ? *)"
+}
+
+variable "aft_backup_retention" {
+  type    = number
+  default = 30
+}

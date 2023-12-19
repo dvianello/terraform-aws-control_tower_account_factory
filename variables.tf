@@ -120,6 +120,19 @@ variable "global_codebuild_timeout" {
   }
 }
 
+variable "aft_backup_schedule" {
+  type        = string
+  description = "Backup schedule for AFT resources (DynamoDB)"
+  default     = "cron(0 * * * ? *)"
+
+}
+
+variable "aft_backup_retention" {
+  type        = number
+  description = "Retention period of AFT Backups recovery points"
+  default     = 30
+}
+
 #########################################
 # AFT Feature Flags
 #########################################
